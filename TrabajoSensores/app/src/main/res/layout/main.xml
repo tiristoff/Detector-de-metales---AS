@@ -1,0 +1,83 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3C596F">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/ValorTotal"
+            android:text="Metal Detector"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#F8F9FB"
+            android:layout_marginTop="5pt"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:textColor="#F8F9FB"
+                android:id="@+id/ValorTotal2"
+                android:layout_width="75pt"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="25pt"
+                android:layout_marginLeft="50pt"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                />
+            <TextView
+                android:textColor="#F8F9FB"
+                android:id="@+id/teslas"
+                android:text="μT"
+                android:textSize="10pt"
+                android:layout_gravity="center"
+                android:layout_width="20pt"
+                android:layout_height="wrap_content" />
+            <ImageButton
+                android:layout_marginRight="5pt"
+                android:layout_gravity="center"
+                android:id="@+id/ImagenSonido"
+                android:layout_width="20pt"
+                android:layout_height="20pt"
+                android:layout_marginTop="2pt"
+                android:layout_marginLeft="2pt"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/steps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <ProgressBar
+            android:progressDrawable="@drawable/estilos"
+            android:id="@+id/progresBar1"
+            android:layout_width="100pt"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:maxHeight="100pt"
+            style="?android:attr/progressBarStyleHorizontal"/>
+        <com.jjoe64.graphview.GraphView
+            android:layout_marginTop="25pt"
+            android:layout_width="match_parent"
+            android:layout_height="200dip"
+            android:id="@+id/graph" />
+
+        <Button
+            android:layout_margin="5pt"
+            android:textColor="#F8F9FB"
+            android:background="#888888"
+            android:id="@+id/btnEstadisticas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Estadisticas" />
+
+    </LinearLayout>
+</ScrollView>

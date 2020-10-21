@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="#3C596F">
+
+    <TextView
+        android:layout_marginLeft="3pt"
+        android:layout_marginTop="4pt"
+        android:layout_marginBottom="10pt"
+        android:id="@+id/txt1"
+        android:textColor="#F8F9FB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tus Estadisticas actuales:"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_gravity="center_horizontal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_marginLeft="3pt"
+            android:layout_marginTop="4pt"
+            android:textColor="#F8F9FB"
+            android:id="@+id/txt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pasos totales"/>
+        <ImageView
+            android:layout_marginLeft="2pt"
+            android:layout_marginBottom="2pt"
+            android:layout_gravity="bottom"
+            android:id="@+id/pasos"
+            android:layout_width="5pt"
+            android:layout_height="5pt" />
+
+        <TextView
+
+            android:layout_marginTop="4pt"
+            android:textColor="#F8F9FB"
+            android:id="@+id/txtPasos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50pt"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_marginLeft="3pt"
+            android:layout_marginTop="4pt"
+            android:textColor="#F8F9FB"
+            android:id="@+id/txt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Metales encontrados"/>
+        <ImageView
+            android:layout_marginLeft="2pt"
+            android:layout_marginBottom="2pt"
+            android:layout_gravity="bottom"
+            android:id="@+id/metal"
+            android:layout_width="5pt"
+            android:layout_height="5pt" />
+
+        <TextView
+
+            android:layout_marginTop="4pt"
+            android:textColor="#F8F9FB"
+            android:id="@+id/txtMetales"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50pt"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_marginLeft="3pt"
+            android:layout_marginTop="4pt"
+            android:textColor="#F8F9FB"
+            android:id="@+id/txt5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pasos sin encontrar un metal"/>
+
+        <TextView
+
+            android:layout_marginTop="4pt"
+            android:textColor="#F8F9FB"
+            android:id="@+id/txtPasosSinEncontrarMetal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50pt"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_marginLeft="3pt"
+            android:layout_marginTop="4pt"
+            android:textColor="#F8F9FB"
+            android:id="@+id/txt6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Metros recorridos sin encontrar metal "/>
+
+        <TextView
+
+            android:layout_marginTop="4pt"
+            android:textColor="#F8F9FB"
+            android:id="@+id/txtMetros"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50pt"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_marginLeft="3pt"
+            android:layout_marginTop="4pt"
+            android:textColor="#F8F9FB"
+            android:id="@+id/txt7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Latitud del ultimo metal encontrado"/>
+
+        <TextView
+
+            android:layout_marginTop="4pt"
+            android:textColor="#F8F9FB"
+            android:id="@+id/txtLatitud"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50pt"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_marginLeft="3pt"
+            android:layout_marginTop="4pt"
+            android:textColor="#F8F9FB"
+            android:id="@+id/txt8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Longitud del ultimo metal encontrado"/>
+
+        <TextView
+
+            android:layout_marginTop="4pt"
+            android:textColor="#F8F9FB"
+            android:id="@+id/txtLongitud"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50pt"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_margin="5pt"
+        android:textColor="#F8F9FB"
+        android:background="#888888"
+        android:id="@+id/btnMapa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Consultar en mapa" />
+
+</LinearLayout>
